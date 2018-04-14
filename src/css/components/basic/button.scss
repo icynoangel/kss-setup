@@ -1,0 +1,66 @@
+// Button
+// 
+// Samples for buttons
+// 
+// Styleguide 1
+
+// Button primary
+//
+// Markup:
+// <button class="button --primary">
+//  <span class="button__caption">Primary button</span>
+// </button>
+//
+// Styleguide 1.1
+// 
+
+// Button secondary
+//
+// Markup:
+// <button class="button --secondary">
+//  <span class="button__caption">Secondary button</span>
+// </button>
+//
+// Styleguide 1.2
+// 
+  
+$button-font-size: $font-large2;
+$button-font-weight: 500;
+
+$button-primary-color: $white;
+$button-primary-bg-color: $prussian-blue;
+$button-primary-border-color: $prussian-blue;
+
+$button-secondary-color: $prussian-blue;
+$button-secondary-bg-color: $white;
+$button-secondary-border-color: $prussian-blue;
+
+$button-shadow-color: $mine-shaft;
+
+
+@include component(button) {
+
+  background-color: $button-primary-bg-color;
+  border: 1px solid $button-primary-border-color;
+  box-shadow: 0px 1px 3px $button-shadow-color;
+  color: $button-primary-color;
+  cursor: pointer;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  height: 6.4rem;
+  margin-right: 2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 24rem;
+  
+  @include option(secondary) {
+    background-color: $button-secondary-bg-color;
+    border: 1px solid $button-secondary-border-color;
+    color: $button-secondary-color;
+  }
+
+  @include part(caption) {
+    display: inline-block;
+    text-align: center;
+  }
+}

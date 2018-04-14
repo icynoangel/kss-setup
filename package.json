@@ -1,0 +1,23 @@
+{
+  "name": "kss-setup",
+  "version": "0.1.0",
+  "description": "Setup KSS",
+  "main": "index.js",
+  "author": "icynoangel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kss": "kss --config kss-config.json"
+  },
+  "dependencies": {
+    "csstyle": "^1.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^3.2.1",
+    "kss": "^3.0.0-beta.18",
+    "node-sass": "^4.5.3",
+    "run-sequence": "^2.2.1"
+  }
+}
